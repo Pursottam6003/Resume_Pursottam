@@ -1,0 +1,2 @@
+% Intro options
+\ProvideClass{resume}[]
