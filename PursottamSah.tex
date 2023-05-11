@@ -29,13 +29,14 @@
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip1pt \parsep0pt}
-{\end{itemize}\vspace{-\topsep}}
+\vspace{-\topsep}
+\begin{itemize}\itemsep0pt \parskip2pt \parsep2pt}
+{\end{itemize}}
 
 
 % Section seperators 
 \usepackage{titlesec}
-\titlespacing{\section}{0pt}{0pt}{0pt} 
+\titlespacing{\section}{0pt}{0pt}{4pt} 
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
 \newcommand{\sectionsep}{\vspace{8pt}}
 
@@ -106,10 +107,11 @@
 
 \begin{multicols}{2}
   \begin{flushleft}
+
     \section*{Education}
     \subsection*{\href{http://nitap.ac.in/}{NIT Arunachal Pradesh}}
     \subheading{B. Tech in Computer Science Eng}{Oct 2020-2024} \\
-    {Cum. GPA: \textbf{8.84 / 10 (Expected)}} 
+    {Cum. GPA: \textbf{8.85 / 10 (Expected)}} 
 
     \subsection*{\href{https://roing.nic.in/public-utility/govt-hr-secondary-school-roing/}{Govt. Higher Sec. School, Roing}}
     \subheading{Higher Secondary, XII (CBSE)}{Grad. Aug 2020} \\
@@ -122,7 +124,8 @@
     %%%%%%%%%%%%%%
     % Course Work
     %%%%%%%%%%%%%%
-    \section*{Coursework}
+    \section*{Coursework} 
+    % \subsection*{Technical \\}     
     \begin{tightemize}
       \item  {Data Structures \& Algorithms} 
       \item  {Object Oriented Programming}
@@ -132,33 +135,37 @@
       \item  {Unix Tools and Scripting} \\
     \end{tightemize}
 
+    \subsection*{Non-Technical \\} 
+    \begin{tightemize}
+      \item  {Technical Communication} 
+      \item  {Software Engineering}
+    \end{tightemize}
+
+
     %%%%%%%%%%%%%%
     % Experience 
     %%%%%%%%%%%%%%
     \section*{Experience}
+    \company{\textbf{\href{https://auth.geeksforgeeks.org/user/rahulsah6003}{Geeksforgeeks}}}{\textbf{April 2023 - Present}} \\
+    \role{\textbf{Technical Content Writer Freelance}}{Remote}
+    \begin{tightemize}
+      \item { Wrote \textbf{2} \textbf{articles}}, modified  \textbf{3} articles  on Geeksforgeeks
+    \end{tightemize}
+
     \company{\textbf{\href{https://iocl.com/}{Indian Oil Corp. Limited}}}{\textbf{Dec 2022 - Jan 2023}} \\
     \role{\textbf{Software Development Internship}}{Ghy, Assam (IN)}
     \begin{tightemize}
       \item {\textbf{Secured} the  \textbf{3\textsuperscript{rd}} rank in  college \textbf{internship selection test} and  \textbf{selected} for this \textbf{internship}}
-      \item {\textbf{Worked} on a lightweight \textbf{app development} project for the \textbf{company}}  and created  \textbf{IOCL Tracker} 
+      \item {Contributed to the development of  \textbf{IOCL Tracker}, an app for Vehicle location tracking and management}
+      \item {\textbf{NodeJs,ReactJs,Express,MongodB}} and {\textbf{Google Maps API}} were used
+      \item {Rewarded with  \textbf{Letter of Recomandation}}
     \end{tightemize}
 
-
-    \company{\textbf{\href{https://ekarigari.in/}{Ekarigari Systems Pvt. Ltd}}}{\textbf{July 2022 - Aug 2022}} \\
-    \role{{\textbf{IoT and ML Trainee}}}{Remote }
-    \begin{tightemize}
-      \item  Acquire a basic understanding of \textbf{3} microcontroller
-            boards, such as the \textbf{NodeMCU, Arduino UNO, and Raspberry
-            Pi.}
-      \item A \textbf{beta version} of the \textbf{Bus Tracking and Navigation
-            System} was completed for more than \textbf{1000 college
-            students.}
-    \end{tightemize}
 
     \company{\textbf{\href{https://www.linkedin.com/company/rebert-tech/about/}{Rebert Technoliges Pvt. Ltd}}}{\textbf{June 2022 - July 2022}}
     \role{{\textbf{Software Development Internship}}}{Pune (Remote)}
     \begin{tightemize}
-      \item  Worked on the current project of the company
+      \item Contributed on the project 
             \textbf{‘DoBuizz’} where  \textbf{reduced} the team workload by \textbf{25}\%.
       \item \textbf{Update} and modify the 
       admin panel using \textbf{Javascript}
@@ -166,32 +173,24 @@
             Database.}
     \end{tightemize}
 
-    \company{\textbf{\href{https://www.businesswebsolutions.in/}{Business Web Solutions Inc}}} {\textbf{May 2022 - July 2022}} \\
-    \role{\textbf{Web Development Internship}}{Remote (IN)}
-    \begin{tightemize}
-      \item { Increase the \textbf{efficiency} of \textbf{Python} scripting by \textbf{70\%} with
-      an understanding of \textbf{ HTML, CSS, and Javascript.}}
-      \item {Utilizing \textbf{SQL} for the creation of \textbf{databases} as a
-      backend which \textbf{improves} the faster \textbf{retrieval} by \textbf{20\%}} 
-    \end{tightemize}
-
+ 
     %%%%%%%%%%%%%%
     % Skills 
     %%%%%%%%%%%%%%
 
     \section*{Skills} 
-    \subsection*{Programming \\} 
+    % \subsection*{Programming \\} 
     \begin{tightemize}
       \item \textbf{Languages:} C, C++, Java
       \item \textbf{Scripting:} Bash, Python
       \item \textbf{Frameworks:} React, Flask, Node
-      \item \textbf{Database:} SQL, Firebase
+      \item \textbf{Database:} SQL, Firebase,MongoDB
       \item \textbf{Platforms:} Linux,Windows
-      \item \textbf{Familiar:} Typescript
+      \item \textbf{Familiar:} Typescript,Docker,Android
       \item \textbf{Others:} git, Microsoft Office
     \end{tightemize}
 
-    \subsection*{Soft Skills}
+    % \subsection*{Soft Skills}
     Leadership \textbullet{} Teamwork \textbullet{} Communication \textbullet{} Organization
 
 
@@ -201,6 +200,28 @@
 %     PROJECTS  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \section*{Projects}
+    
+    \projname{\textbf{\upper{{Atulyam '23}}}}{\href{http://atulyam23.com/}{Live Website}} \\
+    \loc{{\textbf{April 2023 - May 2023}}}{NIT Arunachal Pradesh, Itanagar (IN)}
+    \begin{tightemize}
+      \item  Developed \textbf{the cultural fest} Website for   \textbf{NIT AP}
+      \item  \textbf{ReactJs} is used in the \textbf{frontend} and \textbf{Firebase} is used at
+      the backend for \textbf{registered users information} 
+      \item   \textbf{Frammer motion } is used for \textbf{page transition} which
+      \textbf{improves} interation with  \textbf{users}
+    \end{tightemize} 
+
+
+    \projname{\textbf{\upper{{Technodaya Newsletter App}}}}{\href{https://technodaya.netlify.app/}{Live Website}} \\
+    \loc{{\textbf{Sept 2022 - Present}}}{NIT Arunachal Pradesh, Itanagar (IN)}
+    \begin{tightemize}
+      \item   \textbf{The newsletter website of NIT Arunachal Pradesh.}
+      \item   \textbf{Admin} can fill out the form and generate monthly.
+      magazines which \textbf{reduce} our official \textbf{mail traffic}.
+      \item   \textbf{ReactJs} is used in frontEnd and \textbf{ Google Firebase} is used as a
+      backend for \textbf{server authentication}, and \textbf{databases} of magazines.
+    \end{tightemize}
+
     \projname{\textbf{\upper{{Airavat tracker}}}}{\href{https://github.com/tripathics/airavat-nodejs}{Source Code}} \\
     \loc{{\textbf{Nov 2022 - Present}}}{NIT Arunachal Pradesh (IN)}
     \begin{tightemize}
@@ -211,31 +232,12 @@
     \end{tightemize}
 
 
-    \projname{\textbf{\upper{{Technodaya Newsletter App}}}}{\href{https://technodaya.netlify.app/}{Source Code}} \\
-    \loc{{\textbf{Sept 2022 - Present}}}{NIT Arunachal Pradesh, Itanagar (IN)}
-    \begin{tightemize}
-      \item   \textbf{The newsletter website of NIT Arunachal Pradesh.}
-      \item   \textbf{Admin} can fill out the form and generate monthly.
-      magazines which \textbf{reduce} our official \textbf{mail traffic by 17\%}.
-      \item   \textbf{ReactJs} is used in frontEnd and \textbf{ Google Firebase} is used as a
-      backend for \textbf{server authentication}, and \textbf{databases} of magazines.
-    \end{tightemize}
-
-    \projname{\textbf{\upper{{Ecommerce Webiste}}}}{\href{https://pursottam6003bakewithlove.netlify.app/}{Source Code}} \\
-    \loc{{\textbf{Sept 2022 - Present}}}{NIT Arunachal Pradesh, Itanagar (IN)}
-    \begin{tightemize}
-      \item  Developed \textbf{E-Commerce} Web application \textbf{Bake with Love.}
-      \item  \textbf{ReactJs} is used in the \textbf{frontend} and \textbf{Firebase} is used at
-      the backend for \textbf{ authentication, Databases}, and Cart
-      Products.
-      \item  Stripe \textbf{Payment gateway} is used for \textbf{online payment} which
-      \textbf{improves} business \textbf{sales} by about \textbf{200\%.}
-    \end{tightemize}
 
 
     \section*{Achievements} 
     \begin{tabular}{rll}
-    2023 & \textbf{ 600\textsuperscript{+}} & Questions solved on \href{https://auth.geeksforgeeks.org/user/rahulsah6003/practice/}{\textbf{LeetCode}} \& \href{https://leetcode.com/rahulsah6003/}{\textbf{GFG}} \\
+    2023	     & \textbf{AIR 97}  & \href{https://drive.google.com/file/d/1atilxo1LnxKXvUW8hDytg__F1Dpe0FDC/view}{\textbf{Inter NIT Competition by NIT Bhopal}}\\
+    2023 & \textbf{ 650\textsuperscript{+}} & Questions solved on \href{https://auth.geeksforgeeks.org/user/rahulsah6003/practice/}{\textbf{LeetCode}} \& \href{https://leetcode.com/rahulsah6003/}{\textbf{GFG}} \\
     2022	  &  \textbf{1\textsuperscript{st} Prize} & \href{https://drive.google.com/drive/folders/13uV6u1qge0kMAJ67J84DtnbJjgjbHjSGtBizGmAzotTOa0BFClvEWlYaDQQeQMJbOVtBXxCk}{Idea Pitching \textbf{Startup Cell NIT AP}} \\
     2022	     & \textbf{ 41/15000}  & \href{https://drive.google.com/file/d/1atilxo1LnxKXvUW8hDytg__F1Dpe0FDC/view}{\textbf{CodeChef Long Dec Challenge}}\\
     2022  & \textbf{3452 \textsuperscript{th}} & \href{https://drive.google.com/file/d/1BiwyVlzI5dh4EW5C9SVCS4j_vrKi3bdd/view}{\textbf{Google KickStart Round H}}\\
